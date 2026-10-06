@@ -1,4 +1,13 @@
-﻿public class CircularQueue<T>
+﻿/*
+ * Øvelse (kø)
+ *
+ * Skriv en klasse, som implementerer en cirkulær kø og test den.
+ *
+ * En cirkulær kø kan implementeres som et array (med fast størrelse). Når man når til det sidste
+ * element, gås videre til det første element, hvis der er plads. Køen kan således løbe fuld.
+ * En udvidet version kunne udvide arrayet, når det løber fuldt.
+ */
+public class CircularQueue<T>
 {
     private T[] items;
     private int front = 0;

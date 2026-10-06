@@ -7,6 +7,8 @@ hvor $k$ er bogstavets placering i det engelske alfabet (A=1, …, Z=26). Ved ko
 - Tabel 2 (8%): indsæt nøglerne **R, E, P, U, B, L, I, C, A, N** med samme hashfunktion. 
 Ved kollision anvendes **quadratic probing**.
 
+Eksempel fra opgaven: hash('C') = hash(3) = 11·3 % 16 = 33 % 16 = 1. Ved kollisioner (et element hasher til et optaget indeks) anvendes probing som angivet.
+
 Alfabetets numre: A1 B2 C3 D4 E5 F6 G7 H8 I9 J10 K11 L12 M13 N14 O15 P16 Q17 R18 S19 T20 U21 V22 W23 X24 Y25 Z26.
 
 ---

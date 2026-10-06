@@ -1,4 +1,17 @@
-﻿public class LinkedList<T>
+﻿/*
+ * Øvelse (liste) - Øvelse 3.11 i lærebogen
+ *
+ * Find en implementering af linked list på nettet eller skriv din egen.
+ *
+ * Øvelse 3.11 (Weiss), gengivet i kort form: en enkelthægtet liste implementeres med en
+ * header-node (men uden tail-node). Skriv en klasse med metoder, der kan:
+ *   a. returnere listens størrelse
+ *   b. udskrive listen
+ *   c. teste om en værdi x findes i listen
+ *   d. tilføje x, hvis den ikke allerede findes
+ *   e. fjerne x, hvis den findes
+ */
+public class LinkedList<T>
 {
     private class Node<T>
     {

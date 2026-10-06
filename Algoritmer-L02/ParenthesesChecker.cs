@@ -1,4 +1,15 @@
-﻿public class ParenthesesChecker
+﻿/*
+ * Øvelse (stak)
+ *
+ * Implementér din egen stak og skriv dernæst nedenstående metode. Du skal bruge stakken.
+ * Tællere må ikke anvendes:
+ *
+ *     boolean balPar(String text);
+ *
+ * Metoden tjekker om parenteser () i parameteren er balanceret. En udvidet version vil kunne
+ * omfatte {} og [].
+ */
+public class ParenthesesChecker
 {
     public bool BalPar(string text)
     {

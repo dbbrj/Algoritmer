@@ -1,3 +1,9 @@
+/*
+ * 4. Cuckoo Hashing (supplement)
+ *
+ * Skriv din egen implementering af en Cuckoo hash tabel. Din implementering skal kunne indsætte
+ * og hente elementer og helst også kunne håndtere den situation, at loadfaktoren overskrider 0,5.
+ */
 using System;
 
 public class CuckooHashTable

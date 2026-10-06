@@ -1,7 +1,7 @@
 # Øvelse 5 fra tidligere eksamen (15%) - Hopscotch hashing
 
-**Opgave:** Nedenstående figur viser en tom hopscotch hashtabel med indeks 44–57 og 4-bit "hop"-info pr. plads 
-(neighborhood-størrelse **H = 4**). Indsæt følgende elementer i tabellen og opdater hoppen i overensstemmelse hermed:
+**Opgave:** Nedenstående figur viser en tom hopscotch hash tabel (indeks 44–57, hver plads med hop `0000`). 
+Opgaven går ud på at indsætte følgende elementer i tabellen og opdatere 'hoppen' (the hop) i overensstemmelse hermed:
 
 | Værdi | Hasher til indeks |
 |---|---|
@@ -16,7 +16,9 @@
 | I | 50 |
 | J | 51 |
 
-Beskriv derefter problemet, der opstår, hvis næste indsættelse hasher til indeks 50.
+Beskriv det problem, der opstår, hvis næste indsættelse i tabellen hasher til indeks 50.
+
+*Bemærk:* at neighborhood-størrelsen er **H = 4**, fremgår ikke af teksten, men aflæses af de 4-bit hop-felter i figuren.
 
 ---
 

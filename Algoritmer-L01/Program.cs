@@ -1,4 +1,25 @@
-﻿public class Program
+﻿/*
+ * Øvelser - primære (lektion 1, rekursion)
+ *
+ * - Skriv en rekursiv algoritme med følgende signatur: int logTwo(int N). Algoritmen
+ *   returnerer totals-logaritmen af N, og det er en precondition, at N er et naturligt tal og en
+ *   potens af 2. Kaldt med N = 32 returneres 5, og med N = 4096 returneres 12.
+ *
+ * - Skriv en rekursiv metode, som har en string og en char som parameter og returnerer det antal
+ *   gange char forekommer i string. Kaldt med "banana" returneres 3.
+ *
+ * Løs følgende opgaver med rekursion:
+ *   int sum(int n);           // returns the sum of the first n odd natural numbers
+ *   int evenSquares(int n);   // returns the sum of the first n even numbers' squares
+ *   int fib(int n);           // returns the nth Fibonacci number
+ *   bool linear(string s, char c, int l);
+ *                             // returns true if string s with the length l contains char c,
+ *                             // otherwise false.
+ *   bool binarySearch(int arr[], int value)
+ *                             // returns true if value is in arr, otherwise false
+ *                             // the elements in arr are sorted
+ */
+public class Program
 {
     public static void Main(string[] args)
     {
