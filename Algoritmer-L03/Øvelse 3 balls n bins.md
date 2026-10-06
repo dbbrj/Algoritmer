@@ -14,10 +14,7 @@ Implementér og test Balls & Bins problemet og besvar løs følgende opgaver.
 4. Weiss anfører i sektion 5.7, at med 'almindeligt' B&B eksperiment er den forventede værdi af det maksimale antal bolde pr beholder Θ(log N / log log N) og Θ(log log N) for power of two choices. Kan dine eksperimenter bekræfte disse estimater?
 5. Theorem 5.2 anfører, at hvis N bolde placeres i M = N² beholdere, så er sandsynligheden for, at ingen beholder indeholder mere end én bold mindre end 0,5. Udfør eksperimenter som be- eller afkræfter denne teori.
 
-## Løsning
-
 ---
-
 ## Metode
 
 Simuleringen er kørt i Python (samme logik kan direkte overføres til C#, se kode nedenfor):

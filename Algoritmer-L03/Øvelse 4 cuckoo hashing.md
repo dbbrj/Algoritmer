@@ -31,9 +31,9 @@ private int Hash2(int key) => (((key * 31 + 7) % capacity) + capacity) % capacit
 
 Loadfaktoren håndteres på to måder:
 1. **Proaktivt:** inden en indsættelse tjekkes det, om loadfaktoren (elementer / (2 × kapacitet)) 
-1. allerede vil overstige 0,5 - i så fald forstørres tabellen først.
+allerede vil overstige 0,5 - i så fald forstørres tabellen først.
 2. **Reaktivt:** hvis "smid ud"-kæden rammer `maxKicks` uden at finde en ledig plads (tegn på en cyklus), 
-1. forstørres tabellen, og elementet forsøges indsat igen.
+forstørres tabellen, og elementet forsøges indsat igen.
 
 ---
 
