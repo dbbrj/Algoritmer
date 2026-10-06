@@ -1,5 +1,5 @@
 ﻿
-class Program_solution
+class ProgramSolution
 {
     static bool BinarySearch(int[] array, int target)
     {
