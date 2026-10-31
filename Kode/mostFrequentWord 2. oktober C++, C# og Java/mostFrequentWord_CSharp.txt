@@ -1,0 +1,66 @@
+using System;
+
+public class MostFrequentWord
+{
+    private static string mostFrequentWord(string s)
+    {
+        string s1 = "";
+        int noOfWords = 1;
+
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] == ' ')
+                noOfWords++;
+
+            if (s[i] == ',' || s[i] == '.')
+                continue;
+
+            if (s[i] >= 'A' && s[i] <= 'Z')
+                s1 += (char)(s[i] + 32);
+            else
+                s1 += s[i];
+        }
+
+        Console.WriteLine("Words: " + noOfWords);
+
+        string[] arr = new string[noOfWords];
+        int index = 0;
+
+        for (int i = 0; i < s1.Length; i++)
+        {
+            string s2 = "";
+
+            while (s1[i] != ' ' && i < s1.Length - 1)
+            {
+                s2 += s1[i];
+                i++;
+            }
+
+            arr[index++] = s2;
+        }
+
+        Array.Sort(arr);
+
+        string word = arr[0];
+        int count = 1;
+        int max = 0;
+
+        for (int i = 1; i < noOfWords; i++)
+        {
+            if (arr[i].CompareTo(arr[i - 1]) == 0)
+            {
+                count++;
+
+                if (count > max)
+                {
+                    max = count;
+                    word = arr[i];
+                }
+            }
+            else
+                count = 0;
+        }
+
+        return word;
+    }
+}

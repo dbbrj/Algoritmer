@@ -3,4 +3,12 @@
   <Project Path="Algoritmer-L02/Algoritmer-L02.csproj" />
   <Project Path="Algoritmer-L03/Algoritmer-L03.csproj" Id="81757545-a97f-4bd4-9d95-298055da120e" />
   <Project Path="Algoritmer-L04/Algoritmer-L04.csproj" Id="9cb4ea3a-cdd1-42bf-8cad-175964e813d2" />
+  <Project Path="Algoritmer-L06/Algoritmer-L06.csproj" Id="82308426-8045-4383-a666-2de40b7ab84d" />
+  <Project Path="Algoritmer-L07/Algoritmer-L07.csproj" Id="1406d151-0b36-4ecf-981b-2685862cf41f" />
+  <Project Path="Algoritmer-L08/Algoritmer-L08.csproj" Id="8b9459cf-e68a-4c38-902b-cbd2df41dd66" />
+  <Project Path="Algoritmer-L09/Algoritmer-L09.csproj" Id="eff5a950-ecd9-41d4-9c7f-3eb3dd0939d3" />
+  <Project Path="Algoritmer-L10/Algoritmer-L10.csproj" Id="6fab0d12-261c-4bd7-9263-24e56631c384" />
+  <Project Path="Algoritmer-L11/Algoritmer-L11.csproj" Id="0fb732ea-9522-4980-bf00-579508f9bd24" />
+  <Project Path="Algoritmer-L12/Algoritmer-L12.csproj" Id="745966cd-aed9-4a8e-bf6b-8cb809470c9a" />
+  <Project Path="Algoritmer_L05/Algoritmer-L05.csproj" Id="cd6d9893-aae5-4902-9420-4cec6b15d601" />
 </Solution>

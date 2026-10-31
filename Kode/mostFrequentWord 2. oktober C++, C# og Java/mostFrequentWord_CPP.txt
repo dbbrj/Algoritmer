@@ -1,0 +1,68 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+string mostFrequentWord(string s)
+{
+    string s1 = "";
+    int noOfWords = 1;
+
+    for (int i = 0; i < static_cast<int>(s.length()); i++)
+    {
+        if (s[i] == ' ')
+            noOfWords++;
+
+        if (s[i] == ',' || s[i] == '.')
+            continue;
+
+        if (s[i] >= 'A' && s[i] <= 'Z')
+            s1 += static_cast<char>(s[i] + 32);
+        else
+            s1 += s[i];
+    }
+
+    cout << "Words: " << noOfWords << endl;
+
+    string* arr = new string[noOfWords];
+    int index = 0;
+
+    for (int i = 0; i < static_cast<int>(s1.length()); i++)
+    {
+        string s2 = "";
+
+        while (s1[i] != ' ' && i < static_cast<int>(s1.length()) - 1)
+        {
+            s2 += s1[i];
+            i++;
+        }
+
+        arr[index++] = s2;
+    }
+
+    sort(arr, arr + noOfWords);
+
+    string word = arr[0];
+    int count = 1;
+    int max = 0;
+
+    for (int i = 1; i < noOfWords; i++)
+    {
+        if (arr[i].compare(arr[i - 1]) == 0)
+        {
+            count++;
+
+            if (count > max)
+            {
+                max = count;
+                word = arr[i];
+            }
+        }
+        else
+            count = 0;
+    }
+
+    delete[] arr;
+    return word;
+}

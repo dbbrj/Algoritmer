@@ -1,0 +1,47 @@
+    private static String mostFrequentWord(String s)
+    {
+        String s1 =""; int noOfWords = 1;
+        for (int i = 0; i < s.length();i++)
+        {
+            if (s.charAt(i) == ' ')
+                noOfWords++;
+            if (s.charAt(i) == ',' || s.charAt(i) == '.')
+                continue;
+            if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z')
+                s1 = s1 + (char) (s.charAt(i) + 32);
+            else
+                s1 = s1 + s.charAt(i);
+                
+        }
+        System.out.println("Words: "+noOfWords);
+        String [] arr = new String[noOfWords];
+        int index = 0;
+        for (int i=0; i < s1.length();i++)
+        {
+            String s2 = "";
+            while (s1.charAt(i) != ' ' && i < s1.length()-1)
+            {
+                s2 += s1.charAt(i);
+                i++;
+            }
+            arr[index++] = s2;            
+        }
+        Arrays.sort(arr);
+        String word = arr[0]; int count = 1; int max = 0;
+        for (int i = 1; i < noOfWords; i++)
+        {
+            if (arr[i].compareTo(arr[i-1])==0)
+            {
+                count++;
+                if (count > max)
+                {
+                    max = count;
+                    word = arr[i];
+                }
+            }
+            else
+                count = 0;
+        }
+                
+        return word;
+    }
